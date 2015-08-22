@@ -4,11 +4,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
 var app = express();
+
+var livereload = require('express-livereload')
+var cons = require('consolidate');
+
+require('./helpers/imdb_parser').import_actor_data('./files/actresses.list');
+
+//console.log('process.cwd(): ' + process.cwd());
+
+livereload(app, {watchDir: process.cwd()});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -61,6 +68,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
 
 module.exports = app;

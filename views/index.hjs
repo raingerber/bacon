@@ -6,6 +6,12 @@
   </head>
   <body>
     <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+    <p>Welcome ffff {{ title }}</p>
+	<p> We hope you like it here </p>
+		<p> We hope you like it here </p>
+	Search:
+	{{ > search }}
+	
+	
   </body>
 </html>
