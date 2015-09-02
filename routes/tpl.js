@@ -1,16 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
+// get
 router.get('/', function(req, res, next) {
-	
-	//res.send('HELLO');
-	
-	//console.log('rendering GET');
-	
-	res.render('index');
 
-	//console.log('post render');
-	
+});
+
+// create
+router.post('/', function(req, res, next) {
+
+});
+
+// update
+router.put('/', function(req, res, next) {
+
 });
 
 module.exports = router;

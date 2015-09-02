@@ -8,6 +8,14 @@ var app = require('../app');
 var debug = require('debug')('bacon:server');
 var http = require('http');
 
+//var livereload = require('express-livereload');
+
+//console.log('process.cwd():', process.cwd());
+
+//livereload(app, {watchDir: process.cwd()});
+
+//livereload(app, {});
+
 /**
  * Get port from environment and store in Express.
  */

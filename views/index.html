@@ -3,29 +3,34 @@
 	<head>
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<title>My Title</title>
-/* 		<link rel='stylesheet' href='/foundation/css/normalize.css' />
-		<link rel='stylesheet' href='/foundation/css/foundation.min.css' />
-		<link rel='stylesheet' href='/stylesheets/style.css' /> */
+		<title>{{ title }}</title>
+<!-- 		<link rel='stylesheet' href='/foundation/css/normalize.css' />
+		<link rel='stylesheet' href='/foundation/css/foundation.min.css' /> -->
+		<link rel='stylesheet' href='/stylesheets/style.css' />
 	</head>
+
+	<script type="text/template" id="search_template">
+		<label>Search</label>
+		<input type="text" id="search_input" />
+		<input type="button" id="search_button" value="Search" />
+	</script>
 	
 	<body>
 		
 		<div id='actor-input'>
-			<input placeholder='Actor Name'></input>
 		</div>
 		
 	</body>
 	
-	<script src='./javascripts/jquery2.1.4.js'></script>
 	<script src='./javascripts/underscore.js'></script>
-	<script src='./javascripts/typeahead.jquery.min.js'></script>
+	<script src='./javascripts/jquery2.1.4.js'></script>
 	<script src='./javascripts/backbone.js'></script>
-	<script src='./javascripts/backbone.stickit.js'></script>
 	<script src='./javascripts/init.js'></script>
 	
 <!-- 
-
+	<script src='./javascripts/backbone.stickit.js'></script>
+	<script src='./javascripts/typeahead.jquery.min.js'></script>
+	
 <script src='./javascripts/typeahead.jquery.min.js'></script>	
 <script src='./javascripts/init.js'></script>
 
